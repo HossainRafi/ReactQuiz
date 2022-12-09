@@ -25,6 +25,26 @@ const reducer = (state, action) => {
         correctAnswersCount,
       };
     }
+    case "NEXT_QUESTION": {
+      const showResults =
+        state.currentQuestionIndex === state.questions.length - 1;
+      const currentQuestionIndex = showResults
+        ? state.currentQuestionIndex
+        : state.currentQuestionIndex + 1;
+      const answers = showResults
+        ? []
+        : shuffleAnswers(state.questions[currentQuestionIndex]);
+      return {
+        ...state,
+        currentAnswer: "",
+        showResults,
+        currentQuestionIndex,
+        answers,
+      };
+    }
+    case "RESTART": {
+      return initialState;
+    }
     default:
       return state;
   }
