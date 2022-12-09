@@ -1,9 +1,28 @@
-import React from 'react'
+import { useContext } from "react";
+import Question from "./Question";
+import { QuizContext } from "../contexts/quiz";
 
 const Quiz = () => {
-  return (
-    <div>Quiz</div>
-  )
-}
+  const [quizState, dispatch] = useContext(QuizContext);
 
-export default Quiz
+  return (
+    
+        <div>
+          <div className="score">
+            Question {quizState.currentQuestionIndex + 1}/
+            {quizState.questions.length}
+          </div>
+          <Question />
+          {quizState.currentAnswer && (
+            <div
+              onClick={() => dispatch({ type: "NEXT_QUESTION" })}
+              className="next-button"
+            >
+              Next question
+            </div>
+          )}
+        </div>
+  );
+};
+
+export default Quiz;
