@@ -1,9 +1,14 @@
-import React from 'react'
-
-const Answer = () => {
+const Answer = ({
+  answerText,
+  index,
+  onSelectAnswer,
+  currentAnswer,
+  correctAnswer,
+}) => {
+  
   return (
-    <div>Answer</div>
-  )
-}
+    <div></div>
+  );
+};
 
-export default Answer
+export default Answer;
