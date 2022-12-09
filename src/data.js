@@ -61,6 +61,24 @@ const data = [
     ],
     correctAnswer: "h1 {background-color:#FFFFFF;}",
   },
+  {
+    question: "What Does HTML Stand For?",
+    incorrectAnswers: [
+      "Hyper Text Preprocessor",
+      "Hyper Text Multiple Language",
+      "Hyper Tool Multi Language",
+    ],
+    correctAnswer: "Hyper Text Markup Language",
+  },
+  {
+    question: "What does SQL stand for?",
+    incorrectAnswers: [
+      "Stylish Question Language",
+      "Stylesheet Query Language",
+      "Statement Question Language",
+    ],
+    correctAnswer: "Structured Query Language",
+  },
 ];
 
 export default data;
