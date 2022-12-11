@@ -1,4 +1,4 @@
-# Project Name: [React Quiz](https://quizbyreact.netlify.app)
+# Project Name: [ReactQuiz](https://quizbyreact.netlify.app)
 
 ## Project Live Link: https://quizbyreact.netlify.app
 
