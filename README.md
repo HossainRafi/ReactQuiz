@@ -13,6 +13,3 @@
 ![app image](https://i.ibb.co/54cXsrT/1.png)
 ![app image](https://i.ibb.co/BcdQfrG/2.png)
 ![app image](https://i.ibb.co/Jr9psVB/3.png)
-
-
-
