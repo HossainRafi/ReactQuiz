@@ -1,8 +1,6 @@
 # Project Name: [ReactQuiz](https://quizbyreact.netlify.app)
 
-## Project Live Link: https://quizbyreact.netlify.app
-
-### Technology Used:
+## Technologies:
 - React.js
 - JavaScript
 - HTML
